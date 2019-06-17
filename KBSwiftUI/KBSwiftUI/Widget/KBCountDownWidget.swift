@@ -24,7 +24,7 @@ struct KBCountDownWidget : View {
             }.foregroundColor(self.start ? .gray : .blue)
             .padding(12)
             .clipped()
-            .background(Color.pink)
+            .background(Color.yellow)
             .cornerRadius(12) //一定要在clippd()之后调用
             .padding(12)
     }
