@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
   
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: KBState())
+        window.rootViewController = UIHostingController(rootView: KBCountDownWidget(maxCount: 5))
         self.window = window
         window.makeKeyAndVisible()
     }
