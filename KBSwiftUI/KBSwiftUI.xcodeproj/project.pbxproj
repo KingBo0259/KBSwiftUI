@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A400E62E22B8E86700CA6BB3 /* KBTextWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A400E62D22B8E86700CA6BB3 /* KBTextWidget.swift */; };
 		A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4165E5122B7ABBF009E4529 /* KBCountDownWidget.swift */; };
 		A4165E5422B8DE2E009E4529 /* KBObjectBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4165E5322B8DE2E009E4529 /* KBObjectBinding.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A400E62D22B8E86700CA6BB3 /* KBTextWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTextWidget.swift; sourceTree = "<group>"; };
 		A4165E5122B7ABBF009E4529 /* KBCountDownWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCountDownWidget.swift; sourceTree = "<group>"; };
 		A4165E5322B8DE2E009E4529 /* KBObjectBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBObjectBinding.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
@@ -45,6 +47,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A400E62922B8E7DB00CA6BB3 /* View&Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A400E62C22B8E83400CA6BB3 /* Buttons */,
+				A400E62B22B8E82C00CA6BB3 /* Images */,
+				A400E62A22B8E81300CA6BB3 /* Text */,
+			);
+			path = "View&Controls";
+			sourceTree = "<group>";
+		};
+		A400E62A22B8E81300CA6BB3 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				A400E62D22B8E86700CA6BB3 /* KBTextWidget.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		A400E62B22B8E82C00CA6BB3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A400E62C22B8E83400CA6BB3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		A4165E5022B7AB91009E4529 /* Widget */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +130,7 @@
 		A4CB71FE22B3B8A10039B6C9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				A400E62922B8E7DB00CA6BB3 /* View&Controls */,
 				A4CB71FF22B3B8BF0039B6C9 /* Base */,
 			);
 			path = Study;
@@ -185,6 +220,7 @@
 				A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */,
 				A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
+				A400E62E22B8E86700CA6BB3 /* KBTextWidget.swift in Sources */,
 				A4165E5422B8DE2E009E4529 /* KBObjectBinding.swift in Sources */,
 				A4CB720122B3B8E40039B6C9 /* KBState.swift in Sources */,
 				A4CB71EF22B27A300039B6C9 /* ContentView.swift in Sources */,
