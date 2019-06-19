@@ -48,6 +48,7 @@ struct ContentView : View {
                 .background(Color.yellow)
                 .cornerRadius(8)
             
+            
             Text("Line").padding(.top,15)
             
             Text("Line").scaleEffect(2)
@@ -57,14 +58,32 @@ struct ContentView : View {
             Text("Line")
              Text("Line")//最多只有10个元素排列
             
-        }.accentColor(Color.orange)
+        }.accentColor(Color.orange)//主题颜色设置
     }
 }
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            //不同 字体样式布局
+              ContentView()
+            
+            //不同的 系统字体
+//            ContentView().environment(\.sizeCategory, .extraSmall)
+//
+//              ContentView().environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
+            
+            //不同的设备预览
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+                .previewDisplayName("iPhone SE")
+            
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
+                .previewDisplayName("iPhone XS Max")
+        }
+      
     }
 }
 #endif
