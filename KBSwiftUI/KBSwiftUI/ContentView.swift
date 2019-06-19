@@ -17,13 +17,36 @@ struct ContentView : View {
     var body: some View {
         VStack {
             Group{
-                Text("Line")
-                Text("Line")
+                Text("Hacking with Swift")
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .padding()
+                    .cornerRadius(12)
+                
+                //顺序很重要。。。
+                Text("Hacking with Swift")
+                    .padding()
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(12)
+                
                 Text("Line")
             }
         
             Text("Line")
-            Text("Line")
+                .font(.largeTitle)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.red)
+                .padding()
+                .background(Color.orange)
+                .cornerRadius(6)
+                .padding()
+                .background(Color.yellow)
+                .cornerRadius(8)
+            
+            Text("Line").padding(.top,15)
+            
             Text("Line")
             Text("Line")
             Text("Line")
