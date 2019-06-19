@@ -12,6 +12,7 @@ struct KBSpringAnimation : View {
     @State var showingWelcome = false
     
     @State var angle:Double = 0
+    @State var opacity :Double = 1
     var body: some View {
         VStack{
             Toggle(isOn: $showingWelcome) {
@@ -29,6 +30,13 @@ struct KBSpringAnimation : View {
                 Text("I am toggle")
             }
             
+            Button(action: {
+                withAnimation {
+                    self.opacity -= 0.2
+                }
+            }) {
+                Text("Tap here ").padding().opacity(opacity)
+            }
             
             Button(action: {
                 self.angle  += 45

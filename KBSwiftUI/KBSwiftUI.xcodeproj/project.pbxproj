@@ -33,6 +33,7 @@
 		A467B09D22BA3ED0004737EA /* KBMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09C22BA3ED0004737EA /* KBMask.swift */; };
 		A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09F22BA532C004737EA /* KBBasicAnimation.swift */; };
 		A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */; };
+		A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A522BA5FC8004737EA /* KBTransition.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -70,6 +71,7 @@
 		A467B09C22BA3ED0004737EA /* KBMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBMask.swift; sourceTree = "<group>"; };
 		A467B09F22BA532C004737EA /* KBBasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBasicAnimation.swift; sourceTree = "<group>"; };
 		A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSpringAnimation.swift; sourceTree = "<group>"; };
+		A467B0A522BA5FC8004737EA /* KBTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTransition.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		A467B09822BA38CF004737EA /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				A467B0A422BA5FB0004737EA /* AddAndRemoveViews */,
 				A467B0A122BA5496004737EA /* Spring */,
 				A467B09E22BA5317004737EA /* BasicAnimation */,
 				A467B09922BA3901004737EA /* Rotate */,
@@ -244,6 +247,14 @@
 				A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */,
 			);
 			path = Spring;
+			sourceTree = "<group>";
+		};
+		A467B0A422BA5FB0004737EA /* AddAndRemoveViews */ = {
+			isa = PBXGroup;
+			children = (
+				A467B0A522BA5FC8004737EA /* KBTransition.swift */,
+			);
+			path = AddAndRemoveViews;
 			sourceTree = "<group>";
 		};
 		A4CB71DE22B27A300039B6C9 = {
@@ -400,6 +411,7 @@
 				A467B08522BA12EE004737EA /* KBStaticList.swift in Sources */,
 				A467B08E22BA1F29004737EA /* KBBasicForm.swift in Sources */,
 				A467B09122BA2CE4004737EA /* KBAlertView.swift in Sources */,
+				A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */,
 				A467B08922BA14DE004737EA /* KBListDetetRow.swift in Sources */,
 				A467B08B22BA1AE0004737EA /* KBSectionList.swift in Sources */,
 				A467B09B22BA397D004737EA /* KBRotate.swift in Sources */,
