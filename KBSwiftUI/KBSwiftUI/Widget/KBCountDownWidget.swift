@@ -14,15 +14,17 @@ struct KBCountDownWidget : View {
     @State var start = false
     
     var body: some View {
-        Button(action: self.start == false ? {
+        Button(action:{
             self.start.toggle()
             self.startCountDown()
-            }:{}) {
+            }) {
                 Text(self.start == false ? "点击倒计时" : "\(self.count)s").font(Font.system(size: 16))
             }.foregroundColor(self.start ? .gray : .blue)
             .padding()
             .background(Color.yellow)
-            .cornerRadius(12) //一定要在clippd()之后调用
+            .cornerRadius(12)//一定要在background()之后调用
+            .disabled(self.start == true)
+        
     }
     
     func startCountDown()  {

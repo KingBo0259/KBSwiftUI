@@ -15,8 +15,22 @@ struct ContentView : View {
     @State var colors = ["Red", "Green", "Blue"]
     
     var body: some View {
-        NavigationView {
-            Text("Form")
+        VStack {
+            Group{
+                Text("Line")
+                Text("Line")
+                Text("Line")
+            }
+        
+            Text("Line")
+            Text("Line")
+            Text("Line")
+            Text("Line")
+            Text("Line")
+            Text("Line")
+            Text("Line")
+             Text("Line")//最多只有10个元素排列
+            
         }
     }
 }
