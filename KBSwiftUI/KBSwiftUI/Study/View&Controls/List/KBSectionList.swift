@@ -12,7 +12,7 @@ struct KBSectionList : View {
     var body: some View {
         List{
             Text("I am baselineOffset")
-             Text("I am baselineOffset1")
+            Text("I am baselineOffset1")
             Section(header: Text("12")) {
                 KBSectionRow()
             }
@@ -28,14 +28,21 @@ struct KBSectionList : View {
                 KBSectionRow()
                 KBSectionRow()
             }
- 
-        }.listStyle(.grouped)
+         }.listStyle(.grouped)
     }
 }
 
 struct KBSectionRow :View{
     var body:some View{
-        Text("Row ")
+        HStack{
+            Image("happy")
+                .resizable()
+                .frame(width: 80, height: 80)
+            Text("Row ")
+            Spacer()
+            Text("detail")
+        }
+       
     }
 }
 
