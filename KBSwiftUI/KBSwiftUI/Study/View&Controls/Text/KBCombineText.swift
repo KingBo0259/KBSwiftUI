@@ -32,7 +32,9 @@ struct KBCombineText : View {
                 + Text("awesome").font(.footnote).bold()
             
             Divider()
-            Text(note).lineLimit(0)
+            Text(note).lineLimit(nil) //set nil
+                .multilineTextAlignment(.leading)
+                .lineSpacing(5)
         }
       
     }
