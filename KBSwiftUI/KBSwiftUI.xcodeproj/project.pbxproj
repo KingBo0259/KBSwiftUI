@@ -24,6 +24,7 @@
 		A467B08722BA144A004737EA /* KBDynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B08622BA144A004737EA /* KBDynamicList.swift */; };
 		A467B08922BA14DE004737EA /* KBListDetetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B08822BA14DE004737EA /* KBListDetetRow.swift */; };
 		A467B08B22BA1AE0004737EA /* KBSectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B08A22BA1AE0004737EA /* KBSectionList.swift */; };
+		A467B08E22BA1F29004737EA /* KBBasicForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B08D22BA1F29004737EA /* KBBasicForm.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -52,6 +53,7 @@
 		A467B08622BA144A004737EA /* KBDynamicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDynamicList.swift; sourceTree = "<group>"; };
 		A467B08822BA14DE004737EA /* KBListDetetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBListDetetRow.swift; sourceTree = "<group>"; };
 		A467B08A22BA1AE0004737EA /* KBSectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSectionList.swift; sourceTree = "<group>"; };
+		A467B08D22BA1F29004737EA /* KBBasicForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBasicForm.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		A400E62922B8E7DB00CA6BB3 /* View&Controls */ = {
 			isa = PBXGroup;
 			children = (
+				A467B08C22BA1EE7004737EA /* Form */,
 				A467B08322BA12B8004737EA /* List */,
 				A467B07422B913C3004737EA /* Segment */,
 				A467B06F22B90EB3004737EA /* Picker */,
@@ -171,6 +174,14 @@
 				A467B08A22BA1AE0004737EA /* KBSectionList.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		A467B08C22BA1EE7004737EA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				A467B08D22BA1F29004737EA /* KBBasicForm.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 		A4CB71DE22B27A300039B6C9 = {
@@ -318,6 +329,7 @@
 				A467B08722BA144A004737EA /* KBDynamicList.swift in Sources */,
 				A467B07F22BA0AF5004737EA /* KBEnvironmentObject.swift in Sources */,
 				A467B08522BA12EE004737EA /* KBStaticList.swift in Sources */,
+				A467B08E22BA1F29004737EA /* KBBasicForm.swift in Sources */,
 				A467B08922BA14DE004737EA /* KBListDetetRow.swift in Sources */,
 				A467B08B22BA1AE0004737EA /* KBSectionList.swift in Sources */,
 				A400E62E22B8E86700CA6BB3 /* KBTextWidget.swift in Sources */,
