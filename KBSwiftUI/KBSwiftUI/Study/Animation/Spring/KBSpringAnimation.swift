@@ -9,9 +9,27 @@
 import SwiftUI
 
 struct KBSpringAnimation : View {
+    @State var showingWelcome = false
+    
     @State var angle:Double = 0
     var body: some View {
         VStack{
+            Toggle(isOn: $showingWelcome) {
+                Text("默认绑定  Toggle Lable")
+            }
+            Toggle(isOn: $showingWelcome.animation(.basic())) {
+                Text("Basic绑定  Toggle Lable")
+            }
+            
+            Toggle(isOn: $showingWelcome.animation(.spring())) {
+                Text("Spring动画效果绑定 Toggle Lable")
+            }
+            
+            if  showingWelcome {
+                Text("I am toggle")
+            }
+            
+            
             Button(action: {
                 self.angle  += 45
             }) {
@@ -27,9 +45,9 @@ struct KBSpringAnimation : View {
                 Text("Tap here")
                     .padding()
                     .rotationEffect(.degrees(angle))
-                    .animation(.spring(mass: 1, stiffness: 1, damping: 0.1, initialVelocity: 10))
+                    .animation(.spring(mass: 1, stiffness: 1, damping: 0.1, initialVelocity: 2))
             }
-        }
+        }.padding()
        
     }
 }
