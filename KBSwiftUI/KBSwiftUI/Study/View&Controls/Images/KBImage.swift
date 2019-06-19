@@ -14,6 +14,12 @@ struct KBImage : View {
             Image(systemName: "bolt.fill")
             Text("origin Image").padding(.bottom, 15)
             
+            Image("happy").colorMultiply(.blue)
+            
+            Image("happy")
+                .saturation(0.5)
+                .contrast(0.5)
+            
             Button(action: {
                 print("Button tapped")
             }) {

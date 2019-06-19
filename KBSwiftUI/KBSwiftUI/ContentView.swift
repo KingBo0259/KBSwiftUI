@@ -53,7 +53,7 @@ struct ContentView : View {
             Text("Line").scaleEffect(2)
             Text("Line").scaleEffect(x: 1, y: 5)
             Text("Line2").scaleEffect(2, anchor: UnitPoint(x: 1, y: 0.5))
-            Text("Line")
+            Text("Line") 
             Text("Line")
              Text("Line")//最多只有10个元素排列
             

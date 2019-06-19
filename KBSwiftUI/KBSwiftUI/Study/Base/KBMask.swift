@@ -10,11 +10,15 @@ import SwiftUI
 
 struct KBMask : View {
     var body: some View {
-        Image("happy")
-            .resizable()
-            .frame(width: 300, height: 120)
-        .mask(Text("WAV")
-            .font(Font.system(size:120).weight(.black))).background(Color.red)
+        VStack{
+            Image("happy")
+                .resizable()
+                .frame(width: 300, height: 120)
+                .mask(Text("WAV")
+                    .font(Font.system(size:120).weight(.black))).background(Color.red)
+            Text("Image Blur").blur(radius: 1)
+        }
+     
        
     }
 }
