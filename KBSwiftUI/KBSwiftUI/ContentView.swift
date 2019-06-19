@@ -17,6 +17,9 @@ struct ContentView : View {
     var body: some View {
         VStack {
             Group{
+                Button(action: {}) {
+                    Text("Tap here")
+                }
                 Text("Hacking with Swift")
                     .background(Color.black)
                     .foregroundColor(.white)
@@ -47,14 +50,14 @@ struct ContentView : View {
             
             Text("Line").padding(.top,15)
             
-            Text("Line")
-            Text("Line")
-            Text("Line")
+            Text("Line").scaleEffect(2)
+            Text("Line").scaleEffect(x: 1, y: 5)
+            Text("Line2").scaleEffect(2, anchor: UnitPoint(x: 1, y: 0.5))
             Text("Line")
             Text("Line")
              Text("Line")//最多只有10个元素排列
             
-        }
+        }.accentColor(Color.orange)
     }
 }
 
