@@ -19,14 +19,10 @@ struct KBCountDownWidget : View {
             self.startCountDown()
             }:{}) {
                 Text(self.start == false ? "点击倒计时" : "\(self.count)s").font(Font.system(size: 16))
-                    .frame(width: 100, height: 40, alignment: .center)
-                
             }.foregroundColor(self.start ? .gray : .blue)
-            .padding(12)
-            .clipped()
+            .padding()
             .background(Color.yellow)
             .cornerRadius(12) //一定要在clippd()之后调用
-            .padding(12)
     }
     
     func startCountDown()  {

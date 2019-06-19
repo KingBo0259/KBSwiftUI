@@ -14,8 +14,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
   
+        let setting = KBUserSettings()
+        setting.score = 100
+        
+      
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: KBViewLifecycleEvents())
+        window.rootViewController = UIHostingController(rootView:
+            KBEnvironmentObject().environmentObject(setting))
         self.window = window
         window.makeKeyAndVisible()
     }
