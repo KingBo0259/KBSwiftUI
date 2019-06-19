@@ -31,6 +31,8 @@
 		A467B09722BA3795004737EA /* KBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09622BA3795004737EA /* KBImage.swift */; };
 		A467B09B22BA397D004737EA /* KBRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09A22BA397D004737EA /* KBRotate.swift */; };
 		A467B09D22BA3ED0004737EA /* KBMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09C22BA3ED0004737EA /* KBMask.swift */; };
+		A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B09F22BA532C004737EA /* KBBasicAnimation.swift */; };
+		A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -66,6 +68,8 @@
 		A467B09622BA3795004737EA /* KBImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBImage.swift; sourceTree = "<group>"; };
 		A467B09A22BA397D004737EA /* KBRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBRotate.swift; sourceTree = "<group>"; };
 		A467B09C22BA3ED0004737EA /* KBMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBMask.swift; sourceTree = "<group>"; };
+		A467B09F22BA532C004737EA /* KBBasicAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBasicAnimation.swift; sourceTree = "<group>"; };
+		A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSpringAnimation.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 		A467B09822BA38CF004737EA /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				A467B0A122BA5496004737EA /* Spring */,
+				A467B09E22BA5317004737EA /* BasicAnimation */,
 				A467B09922BA3901004737EA /* Rotate */,
 			);
 			path = Animation;
@@ -222,6 +228,22 @@
 				A467B09A22BA397D004737EA /* KBRotate.swift */,
 			);
 			path = Rotate;
+			sourceTree = "<group>";
+		};
+		A467B09E22BA5317004737EA /* BasicAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A467B09F22BA532C004737EA /* KBBasicAnimation.swift */,
+			);
+			path = BasicAnimation;
+			sourceTree = "<group>";
+		};
+		A467B0A122BA5496004737EA /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */,
+			);
+			path = Spring;
 			sourceTree = "<group>";
 		};
 		A4CB71DE22B27A300039B6C9 = {
@@ -360,12 +382,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */,
 				A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */,
 				A467B07122B90EC4004737EA /* KBPicker.swift in Sources */,
 				A467B08222BA0B60004737EA /* KBUserSettings.swift in Sources */,
 				A467B07322B91127004737EA /* KBDatePicker.swift in Sources */,
 				A467B07D22B9DBD0004737EA /* KBViewLifecycleEvents.swift in Sources */,
 				A467B09522BA31D9004737EA /* KBPresentView.swift in Sources */,
+				A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */,
 				A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,
