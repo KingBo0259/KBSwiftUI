@@ -35,6 +35,7 @@
 		A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */; };
 		A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A522BA5FC8004737EA /* KBTransition.swift */; };
 		A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A722BA6296004737EA /* KBCombineText.swift */; };
+		A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -74,6 +75,7 @@
 		A467B0A222BA54B5004737EA /* KBSpringAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSpringAnimation.swift; sourceTree = "<group>"; };
 		A467B0A522BA5FC8004737EA /* KBTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTransition.swift; sourceTree = "<group>"; };
 		A467B0A722BA6296004737EA /* KBCombineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCombineText.swift; sourceTree = "<group>"; };
+		A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomModifiers.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -260,6 +262,14 @@
 			path = AddAndRemoveViews;
 			sourceTree = "<group>";
 		};
+		A467B0A922BA66C5004737EA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		A4CB71DE22B27A300039B6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +314,7 @@
 		A4CB71FE22B3B8A10039B6C9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				A467B0A922BA66C5004737EA /* Custom */,
 				A467B09822BA38CF004737EA /* Animation */,
 				A467B07722B916A2004737EA /* Gesture&Tap */,
 				A400E62922B8E7DB00CA6BB3 /* View&Controls */,
@@ -404,6 +415,7 @@
 				A467B07322B91127004737EA /* KBDatePicker.swift in Sources */,
 				A467B07D22B9DBD0004737EA /* KBViewLifecycleEvents.swift in Sources */,
 				A467B09522BA31D9004737EA /* KBPresentView.swift in Sources */,
+				A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */,
 				A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */,
 				A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
