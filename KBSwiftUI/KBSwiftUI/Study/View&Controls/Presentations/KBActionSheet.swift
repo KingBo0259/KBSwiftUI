@@ -25,7 +25,7 @@ struct KBActionSheet : View {
             self.showingSheet = true
         }) {
             Text("Show ActionSheet")
-            }.presentation(showingSheet ? sheet :nil)
+            }.presentation(self.showingSheet ? sheet :nil)
     }
 }
 
