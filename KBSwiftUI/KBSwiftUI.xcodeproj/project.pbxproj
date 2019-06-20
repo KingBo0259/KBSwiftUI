@@ -37,6 +37,8 @@
 		A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A722BA6296004737EA /* KBCombineText.swift */; };
 		A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */; };
 		A49A345922BA68E300D98171 /* KBDartAndLightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */; };
+		A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345A22BB2B5A00D98171 /* KBShapes.swift */; };
+		A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345C22BB2C9600D98171 /* KBZStack.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -78,6 +80,8 @@
 		A467B0A722BA6296004737EA /* KBCombineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCombineText.swift; sourceTree = "<group>"; };
 		A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomModifiers.swift; sourceTree = "<group>"; };
 		A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDartAndLightMode.swift; sourceTree = "<group>"; };
+		A49A345A22BB2B5A00D98171 /* KBShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBShapes.swift; sourceTree = "<group>"; };
+		A49A345C22BB2C9600D98171 /* KBZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBZStack.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A467B09622BA3795004737EA /* KBImage.swift */,
+				A49A345A22BB2B5A00D98171 /* KBShapes.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -343,6 +348,7 @@
 				A467B07C22B9DBD0004737EA /* KBViewLifecycleEvents.swift */,
 				A467B07E22BA0AF5004737EA /* KBEnvironmentObject.swift */,
 				A467B09C22BA3ED0004737EA /* KBMask.swift */,
+				A49A345C22BB2C9600D98171 /* KBZStack.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -429,6 +435,7 @@
 				A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */,
 				A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */,
 				A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */,
+				A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,
 				A467B09722BA3795004737EA /* KBImage.swift in Sources */,
@@ -440,6 +447,7 @@
 				A467B09122BA2CE4004737EA /* KBAlertView.swift in Sources */,
 				A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */,
 				A467B08922BA14DE004737EA /* KBListDetetRow.swift in Sources */,
+				A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */,
 				A467B08B22BA1AE0004737EA /* KBSectionList.swift in Sources */,
 				A467B09B22BA397D004737EA /* KBRotate.swift in Sources */,
 				A400E62E22B8E86700CA6BB3 /* KBTextWidget.swift in Sources */,
