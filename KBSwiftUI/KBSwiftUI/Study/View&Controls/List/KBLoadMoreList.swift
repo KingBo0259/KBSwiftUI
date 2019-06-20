@@ -19,11 +19,7 @@ struct KBLoadMoreList : View {
             ForEach(datas.identified(by: \.self)){
                 Text($0)
             }
-            Button(action: {
-              
-            }) {
-                Text("load more")
-                }.onAppear(){
+           Rectangle().background(Color.red).onAppear(){
                     print("onAppear")
                     DispatchQueue.global(qos: .background).asyncAfter(deadline: DispatchTime(uptimeNanoseconds: 10)) {
                         self.loadMore()
