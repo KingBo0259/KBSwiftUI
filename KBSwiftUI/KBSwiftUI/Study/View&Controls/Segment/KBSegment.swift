@@ -24,7 +24,16 @@ struct KBSegment : View {
                 }
             }
             
-            Text("Value:\(favoriteColor)")
+            if  ["0","1","2"].contains(favoriteColor){
+                    Text("Value:\(favoriteColor)")
+            }else {
+                Group{
+                    Image("happy")
+                    Text("\(favoriteColor)")
+                }
+          
+            }
+       
         }
       
     }
