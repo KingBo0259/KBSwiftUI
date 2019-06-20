@@ -57,6 +57,13 @@ struct ContentView : View {
             Text("Line") 
             Text("Line")
              Text("Line")//最多只有10个元素排列
+            Stepper(onIncrement: {
+                
+            }, onDecrement: {
+                
+            }) {
+                Text("Setp")
+            }
             
         }.accentColor(Color.orange)//主题颜色设置
     }
