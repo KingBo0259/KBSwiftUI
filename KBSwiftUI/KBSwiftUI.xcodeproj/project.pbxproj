@@ -39,6 +39,7 @@
 		A49A345922BA68E300D98171 /* KBDartAndLightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */; };
 		A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345A22BB2B5A00D98171 /* KBShapes.swift */; };
 		A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345C22BB2C9600D98171 /* KBZStack.swift */; };
+		A49A346022BB51C500D98171 /* KBTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345F22BB51C500D98171 /* KBTabView.swift */; };
 		A4A1182622B72FB8007E3741 /* KBBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A1182522B72FB8007E3741 /* KBBinding.swift */; };
 		A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */; };
 		A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB71EC22B27A300039B6C9 /* SceneDelegate.swift */; };
@@ -82,6 +83,7 @@
 		A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDartAndLightMode.swift; sourceTree = "<group>"; };
 		A49A345A22BB2B5A00D98171 /* KBShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBShapes.swift; sourceTree = "<group>"; };
 		A49A345C22BB2C9600D98171 /* KBZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBZStack.swift; sourceTree = "<group>"; };
+		A49A345F22BB51C500D98171 /* KBTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTabView.swift; sourceTree = "<group>"; };
 		A4A1182522B72FB8007E3741 /* KBBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBBinding.swift; sourceTree = "<group>"; };
 		A4CB71E722B27A300039B6C9 /* KBSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB71EA22B27A300039B6C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		A400E62922B8E7DB00CA6BB3 /* View&Controls */ = {
 			isa = PBXGroup;
 			children = (
+				A49A345E22BB51B900D98171 /* TabView */,
 				A467B08F22BA2CD2004737EA /* Presentations */,
 				A467B08C22BA1EE7004737EA /* Form */,
 				A467B08322BA12B8004737EA /* List */,
@@ -285,6 +288,14 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
+		A49A345E22BB51B900D98171 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				A49A345F22BB51C500D98171 /* KBTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		A4CB71DE22B27A300039B6C9 = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +446,7 @@
 				A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */,
 				A467B0A022BA532C004737EA /* KBBasicAnimation.swift in Sources */,
 				A4CB71EB22B27A300039B6C9 /* AppDelegate.swift in Sources */,
+				A49A346022BB51C500D98171 /* KBTabView.swift in Sources */,
 				A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,

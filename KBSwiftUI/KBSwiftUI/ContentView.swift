@@ -12,7 +12,7 @@ struct ContentView : View {
     @State var enableLogging = false
     @State var selectedColor = 0
     @State var colors = ["Red", "Green", "Blue"]
-  
+    
     var body: some View {
        return  NavigationView{
             VStack(alignment:.center) {
