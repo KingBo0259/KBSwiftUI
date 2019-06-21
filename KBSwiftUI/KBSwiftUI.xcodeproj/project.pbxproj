@@ -37,6 +37,9 @@
 		A430C81B22BCCA29007EC1FA /* KBData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C81A22BCCA29007EC1FA /* KBData.swift */; };
 		A430C81D22BCCA4B007EC1FA /* KBLandmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C81C22BCCA4B007EC1FA /* KBLandmark.swift */; };
 		A430C81F22BCCABA007EC1FA /* KBHike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C81E22BCCABA007EC1FA /* KBHike.swift */; };
+		A430C82222BCCB1F007EC1FA /* KBHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82122BCCB1F007EC1FA /* KBHomePage.swift */; };
+		A430C82422BCCBB3007EC1FA /* KBFeatureLandMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82322BCCBB3007EC1FA /* KBFeatureLandMarks.swift */; };
+		A430C82622BCD192007EC1FA /* KBCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82522BCD192007EC1FA /* KBCategoryRow.swift */; };
 		A467B07122B90EC4004737EA /* KBPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07022B90EC4004737EA /* KBPicker.swift */; };
 		A467B07322B91127004737EA /* KBDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07222B91127004737EA /* KBDatePicker.swift */; };
 		A467B07622B913E0004737EA /* KBSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07522B913E0004737EA /* KBSegment.swift */; };
@@ -107,6 +110,9 @@
 		A430C81A22BCCA29007EC1FA /* KBData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBData.swift; sourceTree = "<group>"; };
 		A430C81C22BCCA4B007EC1FA /* KBLandmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBLandmark.swift; sourceTree = "<group>"; };
 		A430C81E22BCCABA007EC1FA /* KBHike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBHike.swift; sourceTree = "<group>"; };
+		A430C82122BCCB1F007EC1FA /* KBHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBHomePage.swift; sourceTree = "<group>"; };
+		A430C82322BCCBB3007EC1FA /* KBFeatureLandMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBFeatureLandMarks.swift; sourceTree = "<group>"; };
+		A430C82522BCD192007EC1FA /* KBCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCategoryRow.swift; sourceTree = "<group>"; };
 		A467B07022B90EC4004737EA /* KBPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPicker.swift; sourceTree = "<group>"; };
 		A467B07222B91127004737EA /* KBDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDatePicker.swift; sourceTree = "<group>"; };
 		A467B07522B913E0004737EA /* KBSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSegment.swift; sourceTree = "<group>"; };
@@ -218,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				A4165E5122B7ABBF009E4529 /* KBCountDownWidget.swift */,
+				A430C82322BCCBB3007EC1FA /* KBFeatureLandMarks.swift */,
+				A430C82522BCD192007EC1FA /* KBCategoryRow.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -253,6 +261,14 @@
 				A430C80622BCCA02007EC1FA /* yukon_charleyrivers.jpg */,
 			);
 			path = Resouces;
+			sourceTree = "<group>";
+		};
+		A430C82022BCCB12007EC1FA /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				A430C82122BCCB1F007EC1FA /* KBHomePage.swift */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 		A467B06F22B90EB3004737EA /* Picker */ = {
@@ -416,6 +432,7 @@
 		A4CB71E922B27A300039B6C9 /* KBSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A430C82022BCCB12007EC1FA /* Page */,
 				A430C7F522BCC9E4007EC1FA /* Resouces */,
 				A467B08022BA0B4E004737EA /* Model */,
 				A4165E5022B7AB91009E4529 /* Widget */,
@@ -560,6 +577,7 @@
 				A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */,
 				A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */,
 				A467B07122B90EC4004737EA /* KBPicker.swift in Sources */,
+				A430C82222BCCB1F007EC1FA /* KBHomePage.swift in Sources */,
 				A467B08222BA0B60004737EA /* KBUserSettings.swift in Sources */,
 				A467B07322B91127004737EA /* KBDatePicker.swift in Sources */,
 				A48715EC22BC8A3000F53BAB /* KBScrollView.swift in Sources */,
@@ -587,6 +605,7 @@
 				A430C81F22BCCABA007EC1FA /* KBHike.swift in Sources */,
 				A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */,
 				A467B08B22BA1AE0004737EA /* KBSectionList.swift in Sources */,
+				A430C82622BCD192007EC1FA /* KBCategoryRow.swift in Sources */,
 				A467B09B22BA397D004737EA /* KBRotate.swift in Sources */,
 				A400E62E22B8E86700CA6BB3 /* KBTextWidget.swift in Sources */,
 				A4165E5422B8DE2E009E4529 /* KBObjectBinding.swift in Sources */,
@@ -595,6 +614,7 @@
 				A467B09322BA304A004737EA /* KBActionSheet.swift in Sources */,
 				A400E63322B90D5200CA6BB3 /* KBSlider.swift in Sources */,
 				A467B07922B916E5004737EA /* KBTap.swift in Sources */,
+				A430C82422BCCBB3007EC1FA /* KBFeatureLandMarks.swift in Sources */,
 				A4CB71EF22B27A300039B6C9 /* ContentView.swift in Sources */,
 				A42DAA6522BBB68E0019EEE6 /* KBSystemImage.swift in Sources */,
 				A467B07B22B9D64F004737EA /* KBGesture.swift in Sources */,
