@@ -15,7 +15,8 @@ struct KBStaticList : View {
             Text("row 1")
             Text("row 2")
             Text("row 3")
-        }
+        }.navigationBarTitle(Text("静态列表"))
+        .navigationBarHidden(false)
       
     }
 }

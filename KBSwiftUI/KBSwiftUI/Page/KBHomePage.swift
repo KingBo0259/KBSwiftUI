@@ -36,12 +36,14 @@ struct KBHomePage : View {
                 
                 
                 
-                NavigationButton(destination: KBHomePage()) {
+                NavigationButton(destination: KBStaticList()) {
                     Text("See All")
                 }
                 
             }.navigationBarTitle(Text("Feature"))
-
+                .navigationBarItems(trailing: NavigationButton(destination: KBHomePage(), label: {
+                    Image(systemName:"person.circle")
+                }))
         }
   
     }
