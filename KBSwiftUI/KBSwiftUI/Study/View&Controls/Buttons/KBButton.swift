@@ -19,6 +19,16 @@ struct KBButton : View {
                 }
                 Divider()
                 
+                
+                Button(action: {
+                    print("click")
+                }){
+                    Text("Gradient Button")
+                }.padding()
+                    .foregroundColor(.white)
+                .background(LinearGradient(gradient: Gradient(colors: [Color.blue,.yellow,.pink]), startPoint: .leading, endPoint: .trailing), cornerRadius: 5)
+                Divider()
+                
                 Button(action: {
                     print("click")
                 }){
