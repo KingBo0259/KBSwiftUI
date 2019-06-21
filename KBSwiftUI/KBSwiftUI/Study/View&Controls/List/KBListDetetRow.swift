@@ -16,11 +16,18 @@ struct KBListDetetRow : View {
                 ForEach(users.identified(by: \.self)){
                     user in
                     Text(user)
+                        .color(.blue)
                     }
+                    .listRowBackground(Color.yellow)
+                    .padding(.trailing, 5)
+                    .padding(.leading, 5)
+                    .padding(.top, 2)
                     .onDelete(perform:delete)
                     .onMove(perform:move(from:to:))
                 
-            }.navigationBarItems(trailing: EditButton())
+            }.background(Color.red)
+                .navigationBarItems(trailing: EditButton())
+            
         }
     }
     
