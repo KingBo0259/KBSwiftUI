@@ -14,6 +14,7 @@
 		A4165E5422B8DE2E009E4529 /* KBObjectBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4165E5322B8DE2E009E4529 /* KBObjectBinding.swift */; };
 		A42DAA6322BBA9E70019EEE6 /* KBLoadMoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42DAA6222BBA9E70019EEE6 /* KBLoadMoreList.swift */; };
 		A42DAA6522BBB68E0019EEE6 /* KBSystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42DAA6422BBB68E0019EEE6 /* KBSystemImage.swift */; };
+		A42DAA6722BC79490019EEE6 /* KBButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42DAA6622BC79490019EEE6 /* KBButton.swift */; };
 		A467B07122B90EC4004737EA /* KBPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07022B90EC4004737EA /* KBPicker.swift */; };
 		A467B07322B91127004737EA /* KBDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07222B91127004737EA /* KBDatePicker.swift */; };
 		A467B07622B913E0004737EA /* KBSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07522B913E0004737EA /* KBSegment.swift */; };
@@ -60,6 +61,7 @@
 		A4165E5322B8DE2E009E4529 /* KBObjectBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBObjectBinding.swift; sourceTree = "<group>"; };
 		A42DAA6222BBA9E70019EEE6 /* KBLoadMoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBLoadMoreList.swift; sourceTree = "<group>"; };
 		A42DAA6422BBB68E0019EEE6 /* KBSystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSystemImage.swift; sourceTree = "<group>"; };
+		A42DAA6622BC79490019EEE6 /* KBButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBButton.swift; sourceTree = "<group>"; };
 		A467B07022B90EC4004737EA /* KBPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPicker.swift; sourceTree = "<group>"; };
 		A467B07222B91127004737EA /* KBDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDatePicker.swift; sourceTree = "<group>"; };
 		A467B07522B913E0004737EA /* KBSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSegment.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		A400E62C22B8E83400CA6BB3 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				A42DAA6622BC79490019EEE6 /* KBButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */,
+				A42DAA6722BC79490019EEE6 /* KBButton.swift in Sources */,
 				A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */,
 				A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */,
 				A467B07122B90EC4004737EA /* KBPicker.swift in Sources */,

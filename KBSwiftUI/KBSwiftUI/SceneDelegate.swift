@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = UIHostingController(rootView:
-            KBLoadMoreList())
+            KBButton())
         self.window = window
         window.makeKeyAndVisible()
     }
