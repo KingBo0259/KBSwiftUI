@@ -107,7 +107,6 @@ struct KBButton : View {
                     }.padding()
                     .foregroundColor(.white)
                     .background(Color.purple)
-                
             }
         }
        

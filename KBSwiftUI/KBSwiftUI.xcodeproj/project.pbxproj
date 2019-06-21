@@ -40,6 +40,7 @@
 		A430C82222BCCB1F007EC1FA /* KBHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82122BCCB1F007EC1FA /* KBHomePage.swift */; };
 		A430C82422BCCBB3007EC1FA /* KBFeatureLandMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82322BCCBB3007EC1FA /* KBFeatureLandMarks.swift */; };
 		A430C82622BCD192007EC1FA /* KBCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82522BCD192007EC1FA /* KBCategoryRow.swift */; };
+		A430C82922BCD98B007EC1FA /* KBLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82822BCD98B007EC1FA /* KBLoginPage.swift */; };
 		A467B07122B90EC4004737EA /* KBPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07022B90EC4004737EA /* KBPicker.swift */; };
 		A467B07322B91127004737EA /* KBDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07222B91127004737EA /* KBDatePicker.swift */; };
 		A467B07622B913E0004737EA /* KBSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07522B913E0004737EA /* KBSegment.swift */; };
@@ -113,6 +114,7 @@
 		A430C82122BCCB1F007EC1FA /* KBHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBHomePage.swift; sourceTree = "<group>"; };
 		A430C82322BCCBB3007EC1FA /* KBFeatureLandMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBFeatureLandMarks.swift; sourceTree = "<group>"; };
 		A430C82522BCD192007EC1FA /* KBCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCategoryRow.swift; sourceTree = "<group>"; };
+		A430C82822BCD98B007EC1FA /* KBLoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBLoginPage.swift; sourceTree = "<group>"; };
 		A467B07022B90EC4004737EA /* KBPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPicker.swift; sourceTree = "<group>"; };
 		A467B07222B91127004737EA /* KBDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDatePicker.swift; sourceTree = "<group>"; };
 		A467B07522B913E0004737EA /* KBSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSegment.swift; sourceTree = "<group>"; };
@@ -266,9 +268,18 @@
 		A430C82022BCCB12007EC1FA /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				A430C82722BCD97D007EC1FA /* Login */,
 				A430C82122BCCB1F007EC1FA /* KBHomePage.swift */,
 			);
 			path = Page;
+			sourceTree = "<group>";
+		};
+		A430C82722BCD97D007EC1FA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A430C82822BCD98B007EC1FA /* KBLoginPage.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		A467B06F22B90EB3004737EA /* Picker */ = {
@@ -593,6 +604,7 @@
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,
 				A467B09722BA3795004737EA /* KBImage.swift in Sources */,
+				A430C82922BCD98B007EC1FA /* KBLoginPage.swift in Sources */,
 				A467B08722BA144A004737EA /* KBDynamicList.swift in Sources */,
 				A467B09D22BA3ED0004737EA /* KBMask.swift in Sources */,
 				A42DAA6A22BC84430019EEE6 /* KBGradient.swift in Sources */,

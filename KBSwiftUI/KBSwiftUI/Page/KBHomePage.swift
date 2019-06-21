@@ -16,14 +16,14 @@ struct KBHomePage : View {
         )
     }
     
-    var feature :[KBLandmark]  {
-        landmarkData.filter{$0.isFeatured}
+    var feature :KBLandmark  {
+        landmarkData.filter{$0.isFeatured}.randomElement()!
     }
     
     var body: some View {
         NavigationView{
             List{
-                KBFeatureLandMarks(feature: feature.first!)
+                KBFeatureLandMarks(feature: feature)
                     .scaledToFill()
                     .frame(height: 200)
                     .clipped()
@@ -41,9 +41,9 @@ struct KBHomePage : View {
                 }
                 
             }.navigationBarTitle(Text("Feature"))
-                .navigationBarItems(trailing: NavigationButton(destination: KBHomePage(), label: {
-                    Image(systemName:"person.circle")
-                }))
+                .navigationBarItems(trailing:
+                    PresentationButton(Image(systemName:"person.circle"), destination: KBLoginPage())
+                )
         }
   
     }
