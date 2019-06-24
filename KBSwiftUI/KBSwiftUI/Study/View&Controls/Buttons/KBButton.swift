@@ -12,6 +12,14 @@ struct KBButton : View {
     var body: some View {
         VStack {
             Group {
+                
+                Button(action: {
+                    print("click")
+                }){
+                    Text("Disable Button").color(.gray)
+                }.disabled(false)
+                 .padding()
+                
                 Button(action: {
                     print("click")
                 }){
