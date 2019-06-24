@@ -9,12 +9,18 @@
 import SwiftUI
 import Combine
 
+ let  KBUserNameMaxLenght = 15
+ let  KBPasswordMaxLenght = 6
+
 class KBLoginModel:  BindableObject{
     var didChange = PassthroughSubject<Void,Never>()
     var username = ""{
         didSet{
-             setButtonEnable()
-            self.didChange.send(())
+            if  username.count > KBUserNameMaxLenght {
+                username = String(username.prefix(KBUserNameMaxLenght))
+            }
+            setButtonEnable()
+            didChange.send(())
         }
     }
     
@@ -25,9 +31,13 @@ class KBLoginModel:  BindableObject{
     }
     
     var password = ""{
+      
         didSet {
+            if password.count > KBPasswordMaxLenght {
+                password = String(password.prefix(KBPasswordMaxLenght))
+            }
             setButtonEnable()
-            self.didChange.send(())
+            didChange.send(())
         }
     }
     var loginButtonEnable = false

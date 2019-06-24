@@ -7,10 +7,25 @@
 //
 
 import SwiftUI
+import Combine
+class KBTextFieldModel: BindableObject{
+    var didChange = PassthroughSubject<Void,Never>()
+    
+    var myMaxInput = "" {
+        didSet {
+            if myMaxInput.count > 6 {
+                myMaxInput =  String(myMaxInput.prefix(6))
+            }
+            didChange.send(())
+        }
+    }
+}
 
 struct KBTextField : View {
     @State var username :String = ""
     @State var password :String = ""
+    @ObjectBinding var model = KBTextFieldModel()
+ 
     var body: some View {
         VStack {
             Group{
@@ -22,6 +37,8 @@ struct KBTextField : View {
                     .textFieldStyle(.roundedBorder)
                 
                   TextField($password,placeholder: Text("please  input password")).textFieldStyle(.roundedBorder)
+                
+                  TextField($model.myMaxInput,placeholder: Text("Max Length 6")).textFieldStyle(.roundedBorder)
                 
               
              
