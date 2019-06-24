@@ -33,7 +33,7 @@ class KBLoginModel:  BindableObject{
     var loginButtonEnable = false
     
     private func setButtonEnable()  {
-         loginButtonEnable = !username.isEmpty  &&  password.count > 3
+         loginButtonEnable = !username.isEmpty  &&  password.count > 0
     }
     
     fileprivate func loginTap(){
@@ -53,14 +53,14 @@ struct KBLoginPage : View {
             
             Group {
                 HStack(alignment:.center){
-                    Image(systemName: "person")
+                    Image(systemName: "person").padding()
                     TextField($userMobel.username,placeholder: Text("Please enter you  username"))
                         .textFieldStyle(.roundedBorder).padding(.trailing,32)
                 }.padding(.bottom,10)
              
                 Group{
                     HStack{
-                        Image(systemName: "lock")
+                        Image(systemName: "lock").padding()
                         
                         if !userMobel.showPassword {
                             SecureField($userMobel
@@ -71,6 +71,7 @@ struct KBLoginPage : View {
                                 .password, placeholder: Text("Please enter you password"))
                                 .textFieldStyle(.roundedBorder)
                         }
+                    
                     
                         Image(systemName: userMobel.showPassword ? "eye.slash" : "eye")
                             .gesture(TapGesture().onEnded({ _ in                                self.userMobel.showPassword.toggle()
