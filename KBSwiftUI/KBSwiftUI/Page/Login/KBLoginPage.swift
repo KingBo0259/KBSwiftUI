@@ -37,6 +37,7 @@ class KBLoginModel:  BindableObject{
     }
     
     fileprivate func loginTap(){
+        UIApplication.shared.keyWindow?.endEditing(true)
         print("start to login : \n userName \(username) \n password:\(password)")
     }
 }
