@@ -18,6 +18,11 @@ class KBLoginModel:  BindableObject{
         }
     }
     
+    var showPassword = false {
+        didSet {
+            self.didChange.send(())
+        }
+    }
     
     var password = ""{
         didSet {
@@ -56,10 +61,21 @@ struct KBLoginPage : View {
                 Group{
                     HStack{
                         Image(systemName: "lock")
-                        SecureField($userMobel
-                            .password, placeholder: Text("Please enter you password"))
-                            .textFieldStyle(.roundedBorder)
-                        Image(systemName: "eye")
+                        
+                        if !userMobel.showPassword {
+                            SecureField($userMobel
+                                .password, placeholder: Text("Please enter you password"))
+                                .textFieldStyle(.roundedBorder)
+                        }else {
+                            TextField($userMobel
+                                .password, placeholder: Text("Please enter you password"))
+                                .textFieldStyle(.roundedBorder)
+                        }
+                    
+                        Image(systemName: userMobel.showPassword ? "eye.slash" : "eye")
+                            .gesture(TapGesture().onEnded({ _ in                                self.userMobel.showPassword.toggle()
+                            }))
+                        
                     }
                 }
              
