@@ -67,7 +67,9 @@ struct KBMessageChatPage : View {
       
             HStack{
                 KBMultilineTextView(text: $sendMessage)
-                    .frame(height:40)
+                    .frame(height:30)
+                    .background(Color.red)
+                    .foregroundColor(Color.blue)
    
                 /*由于TextField无法实现换行 操作，因此使用自定义 封装UITextView 进行实现*/
  // TextField($sendMessage,placeholder: Text("please enter you say"))
