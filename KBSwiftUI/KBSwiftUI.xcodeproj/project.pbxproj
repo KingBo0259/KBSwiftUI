@@ -66,6 +66,7 @@
 		A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A722BA6296004737EA /* KBCombineText.swift */; };
 		A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */; };
 		A48715EC22BC8A3000F53BAB /* KBScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48715EB22BC8A3000F53BAB /* KBScrollView.swift */; };
+		A498701C22C1CE36009B3442 /* KBCoreMLPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */; };
 		A49A345922BA68E300D98171 /* KBDartAndLightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */; };
 		A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345A22BB2B5A00D98171 /* KBShapes.swift */; };
 		A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345C22BB2C9600D98171 /* KBZStack.swift */; };
@@ -140,6 +141,7 @@
 		A467B0A722BA6296004737EA /* KBCombineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCombineText.swift; sourceTree = "<group>"; };
 		A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomModifiers.swift; sourceTree = "<group>"; };
 		A48715EB22BC8A3000F53BAB /* KBScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBScrollView.swift; sourceTree = "<group>"; };
+		A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBCoreMLPage.swift; sourceTree = "<group>"; };
 		A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDartAndLightMode.swift; sourceTree = "<group>"; };
 		A49A345A22BB2B5A00D98171 /* KBShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBShapes.swift; sourceTree = "<group>"; };
 		A49A345C22BB2C9600D98171 /* KBZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBZStack.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		A430C82022BCCB12007EC1FA /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				A45B2E2D22C1B8AD0070717E /* CoreML */,
 				A430C82722BCD97D007EC1FA /* Login */,
 				A430C82122BCCB1F007EC1FA /* KBHomePage.swift */,
 			);
@@ -280,6 +283,14 @@
 				A430C82822BCD98B007EC1FA /* KBLoginPage.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A45B2E2D22C1B8AD0070717E /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 		A467B06F22B90EB3004737EA /* Picker */ = {
@@ -584,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */,
+				A498701C22C1CE36009B3442 /* KBCoreMLPage.swift in Sources */,
 				A42DAA6722BC79490019EEE6 /* KBButton.swift in Sources */,
 				A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */,
 				A4165E5222B7ABBF009E4529 /* KBCountDownWidget.swift in Sources */,
