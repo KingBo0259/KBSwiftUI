@@ -68,6 +68,8 @@
 		A48715EC22BC8A3000F53BAB /* KBScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48715EB22BC8A3000F53BAB /* KBScrollView.swift */; };
 		A498701C22C1CE36009B3442 /* KBCoreMLPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */; };
 		A498701F22C1F306009B3442 /* KBMessageChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498701E22C1F306009B3442 /* KBMessageChatPage.swift */; };
+		A498702222C201F7009B3442 /* KBPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498702122C201F7009B3442 /* KBPageViewController.swift */; };
+		A498702522C20378009B3442 /* KBPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498702422C20378009B3442 /* KBPageView.swift */; };
 		A49A345922BA68E300D98171 /* KBDartAndLightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */; };
 		A49A345B22BB2B5A00D98171 /* KBShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345A22BB2B5A00D98171 /* KBShapes.swift */; };
 		A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49A345C22BB2C9600D98171 /* KBZStack.swift */; };
@@ -80,6 +82,7 @@
 		A4CB71F422B27A320039B6C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CB71F322B27A320039B6C9 /* Preview Assets.xcassets */; };
 		A4CB71F722B27A320039B6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB71F522B27A320039B6C9 /* LaunchScreen.storyboard */; };
 		A4CB720122B3B8E40039B6C9 /* KBState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB720022B3B8E40039B6C9 /* KBState.swift */; };
+		A4F74E2122C206260061C103 /* KBMultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F74E2022C206260061C103 /* KBMultilineTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +147,8 @@
 		A48715EB22BC8A3000F53BAB /* KBScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBScrollView.swift; sourceTree = "<group>"; };
 		A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBCoreMLPage.swift; sourceTree = "<group>"; };
 		A498701E22C1F306009B3442 /* KBMessageChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBMessageChatPage.swift; sourceTree = "<group>"; };
+		A498702122C201F7009B3442 /* KBPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPageViewController.swift; sourceTree = "<group>"; };
+		A498702422C20378009B3442 /* KBPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPageView.swift; sourceTree = "<group>"; };
 		A49A345822BA68E300D98171 /* KBDartAndLightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDartAndLightMode.swift; sourceTree = "<group>"; };
 		A49A345A22BB2B5A00D98171 /* KBShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBShapes.swift; sourceTree = "<group>"; };
 		A49A345C22BB2C9600D98171 /* KBZStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBZStack.swift; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		A4CB71F622B27A320039B6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CB71F822B27A320039B6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CB720022B3B8E40039B6C9 /* KBState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBState.swift; sourceTree = "<group>"; };
+		A4F74E2022C206260061C103 /* KBMultilineTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBMultilineTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,6 +444,24 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		A498702022C20054009B3442 /* WrapperUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A4F74E1F22C206260061C103 /* MutilineTextView */,
+				A498702322C2035F009B3442 /* PageViewController */,
+			);
+			path = WrapperUIKit;
+			sourceTree = "<group>";
+		};
+		A498702322C2035F009B3442 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A498702122C201F7009B3442 /* KBPageViewController.swift */,
+				A498702422C20378009B3442 /* KBPageView.swift */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
 		A49A345E22BB51B900D98171 /* TabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -492,6 +516,7 @@
 		A4CB71FE22B3B8A10039B6C9 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				A498702022C20054009B3442 /* WrapperUIKit */,
 				A467B0AC22BA679D004737EA /* Theme */,
 				A467B0A922BA66C5004737EA /* Custom */,
 				A467B09822BA38CF004737EA /* Animation */,
@@ -514,6 +539,14 @@
 				A49A345C22BB2C9600D98171 /* KBZStack.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		A4F74E1F22C206260061C103 /* MutilineTextView */ = {
+			isa = PBXGroup;
+			children = (
+				A4F74E2022C206260061C103 /* KBMultilineTextView.swift */,
+			);
+			path = MutilineTextView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */,
+				A4F74E2122C206260061C103 /* KBMultilineTextView.swift in Sources */,
 				A498701C22C1CE36009B3442 /* KBCoreMLPage.swift in Sources */,
 				A42DAA6722BC79490019EEE6 /* KBButton.swift in Sources */,
 				A467B0A322BA54B5004737EA /* KBSpringAnimation.swift in Sources */,
@@ -627,6 +661,7 @@
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,
 				A467B09722BA3795004737EA /* KBImage.swift in Sources */,
+				A498702522C20378009B3442 /* KBPageView.swift in Sources */,
 				A430C82922BCD98B007EC1FA /* KBLoginPage.swift in Sources */,
 				A467B08722BA144A004737EA /* KBDynamicList.swift in Sources */,
 				A467B09D22BA3ED0004737EA /* KBMask.swift in Sources */,
@@ -634,6 +669,7 @@
 				A467B07F22BA0AF5004737EA /* KBEnvironmentObject.swift in Sources */,
 				A467B08522BA12EE004737EA /* KBStaticList.swift in Sources */,
 				A467B08E22BA1F29004737EA /* KBBasicForm.swift in Sources */,
+				A498702222C201F7009B3442 /* KBPageViewController.swift in Sources */,
 				A467B09122BA2CE4004737EA /* KBAlertView.swift in Sources */,
 				A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */,
 				A467B08922BA14DE004737EA /* KBListDetetRow.swift in Sources */,

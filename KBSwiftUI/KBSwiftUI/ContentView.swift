@@ -12,11 +12,14 @@ struct ContentView : View {
     @State var enableLogging = false
     @State var selectedColor = 0
     @State var colors = ["Red", "Green", "Blue"]
+    @State var multilineText = ""
     
     var body: some View {
        return  NavigationView{
             VStack(alignment:.center) {
                     Group{
+                        KBMultilineTextView(text: $multilineText)
+                            .frame(width:100,height: 60)
                         Button(action: {}) {
                             Text("Tap here")
                         }
