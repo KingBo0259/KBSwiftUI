@@ -55,6 +55,7 @@ class KBLoginModel:  BindableObject{
 
 struct KBLoginPage : View {
     @ObjectBinding var userMobel = KBLoginModel()
+    @Binding var dismissLogin :Bool
     var body: some View {
         VStack{
              ImageStore.shared.image(name: "charleyrivers_feature", size: 200)
@@ -97,6 +98,7 @@ struct KBLoginPage : View {
                 Button(action: {
                     print("tap")
                     self.userMobel.loginTap()
+                    self.dismissLogin.toggle()
                 }) {
                     Text("Login")
                         .color(.white)
@@ -134,10 +136,3 @@ struct KBLoginPage : View {
     }
 }
 
-#if DEBUG
-struct KBLoginPage_Previews : PreviewProvider {
-    static var previews: some View {
-        KBLoginPage()
-    }
-}
-#endif

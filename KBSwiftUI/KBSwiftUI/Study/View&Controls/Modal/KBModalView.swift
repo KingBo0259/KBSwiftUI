@@ -33,7 +33,7 @@ struct KBModalView : View {
         { Text("Show") }
             .presentation(!dismissFlag ? nil :
                     Modal(KBModalDetailView(dismissFlag: $dismissFlag)) {
-                    print("dismissed")
+                    print("dismissed \(self.dismissFlag)")
                 }
                
             )

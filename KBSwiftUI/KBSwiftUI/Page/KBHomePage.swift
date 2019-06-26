@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct KBHomePage : View {
+    @State var dismissLogin = true //默认关闭登录页面
     var categories: [String: [KBLandmark]] {
         .init(
             grouping: landmarkData,
@@ -38,11 +39,23 @@ struct KBHomePage : View {
                 
                 NavigationButton(destination: KBStaticList()) {
                     Text("See All")
-                }
+                    }
                 
-            }.navigationBarTitle(Text("Feature"))
+    }.presentation(self.dismissLogin ? nil : Modal(KBLoginPage(dismissLogin: $dismissLogin)){
+        if self.dismissLogin == false {
+        self.dismissLogin = true
+    }
+    print("KBLoginPage dismiss :\(self.dismissLogin)")
+    })
+                    
+                .navigationBarTitle(Text("Feature"))
                 .navigationBarItems(trailing:
-                    PresentationButton(Image(systemName:"person.circle"), destination: KBLoginPage())
+                   
+                    Button(action: {
+                       self.dismissLogin = false
+                    }, label: {
+                        Image(systemName:"person.circle")
+                    })
                 )
         }
   
