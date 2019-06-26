@@ -93,18 +93,41 @@ struct KBLoginPage : View {
              
             }
             
-            Button(action: {
-                print("tap")
-                self.userMobel.loginTap()
-            }) {
-                Text("Login")
-                    .color(.white)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 40, maxHeight: 40, alignment: .center)
-                    .background( userMobel.loginButtonEnable
-                        ? Color.blue : Color.gray)
-                      .cornerRadius(5)          .disabled(false)
+            Group{
+                Button(action: {
+                    print("tap")
+                    self.userMobel.loginTap()
+                }) {
+                    Text("Login")
+                        .color(.white)
+                        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 40, maxHeight: 40, alignment: .center)
+                        .background( userMobel.loginButtonEnable
+                            ? Color.blue : Color.gray)
+                        .cornerRadius(5)          .disabled(false)
                 }
-            
+                
+                HStack{
+                    Spacer()
+                    Button(action: {
+                        KBFaceIDLogin.login { (result) in
+                            switch result {
+                            case .success(let value):
+                                print("success\(value)")
+                                break
+                            case .failure(let error):
+                                print("\(error)")
+                                break
+                            }
+                        }
+                    }) {
+                        Text("FaceID 登录")
+                            
+                           .font(.footnote) .color(.gray).padding(.top,8)
+                    }
+                }
+                
+            }
+           
             Spacer()
             
         }.padding()
