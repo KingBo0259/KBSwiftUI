@@ -42,6 +42,7 @@
 		A430C82622BCD192007EC1FA /* KBCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82522BCD192007EC1FA /* KBCategoryRow.swift */; };
 		A430C82922BCD98B007EC1FA /* KBLoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A430C82822BCD98B007EC1FA /* KBLoginPage.swift */; };
 		A454D10522C34CB00017DDF8 /* KBFaceIDLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454D10422C34CB00017DDF8 /* KBFaceIDLogin.swift */; };
+		A454D10822C35C020017DDF8 /* KBModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A454D10722C35C020017DDF8 /* KBModalView.swift */; };
 		A467B07122B90EC4004737EA /* KBPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07022B90EC4004737EA /* KBPicker.swift */; };
 		A467B07322B91127004737EA /* KBDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07222B91127004737EA /* KBDatePicker.swift */; };
 		A467B07622B913E0004737EA /* KBSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B07522B913E0004737EA /* KBSegment.swift */; };
@@ -122,6 +123,7 @@
 		A430C82522BCD192007EC1FA /* KBCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCategoryRow.swift; sourceTree = "<group>"; };
 		A430C82822BCD98B007EC1FA /* KBLoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBLoginPage.swift; sourceTree = "<group>"; };
 		A454D10422C34CB00017DDF8 /* KBFaceIDLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBFaceIDLogin.swift; sourceTree = "<group>"; };
+		A454D10722C35C020017DDF8 /* KBModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBModalView.swift; sourceTree = "<group>"; };
 		A467B07022B90EC4004737EA /* KBPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBPicker.swift; sourceTree = "<group>"; };
 		A467B07222B91127004737EA /* KBDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDatePicker.swift; sourceTree = "<group>"; };
 		A467B07522B913E0004737EA /* KBSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSegment.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		A400E62922B8E7DB00CA6BB3 /* View&Controls */ = {
 			isa = PBXGroup;
 			children = (
+				A454D10622C35BE00017DDF8 /* Modal */,
 				A48715E922BC885500F53BAB /* ScrollView */,
 				A42DAA6822BC84340019EEE6 /* Gradient */,
 				A49A345E22BB51B900D98171 /* TabView */,
@@ -295,6 +298,14 @@
 				A454D10422C34CB00017DDF8 /* KBFaceIDLogin.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A454D10622C35BE00017DDF8 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A454D10722C35C020017DDF8 /* KBModalView.swift */,
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 		A45B2E2D22C1B8AD0070717E /* CoreML */ = {
@@ -652,6 +663,7 @@
 				A467B08222BA0B60004737EA /* KBUserSettings.swift in Sources */,
 				A467B07322B91127004737EA /* KBDatePicker.swift in Sources */,
 				A48715EC22BC8A3000F53BAB /* KBScrollView.swift in Sources */,
+				A454D10822C35C020017DDF8 /* KBModalView.swift in Sources */,
 				A42DAA6322BBA9E70019EEE6 /* KBLoadMoreList.swift in Sources */,
 				A467B07D22B9DBD0004737EA /* KBViewLifecycleEvents.swift in Sources */,
 				A467B09522BA31D9004737EA /* KBPresentView.swift in Sources */,
