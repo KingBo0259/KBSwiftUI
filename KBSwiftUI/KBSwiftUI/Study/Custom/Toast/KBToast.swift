@@ -8,22 +8,38 @@
 
 import SwiftUI
 
-let KBToastDelayTime : TimeInterval = 5
+let KBToastDelayTime : TimeInterval = 3
 
-
+//avoid trigger more times
+class KBToastManger {
+    var stopDate  = Date()
+    static let share = KBToastManger()
+    func delayTimeCall( callBack:@escaping  ()->Void, delayTime:TimeInterval)  {
+        stopDate = Date(timeInterval: delayTime, since: Date())
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayTime) {
+            guard   self.stopDate < Date() else {
+                print("time not out  keey going on")
+                return
+            }
+            print("timeout  Call back ")
+            callBack()
+        }
+    }
+}
 struct KBToast<Presenting> : View where Presenting:View {
     @Binding var isShowing :Bool
     //show parent View
-    let presenting:() -> Presenting
+     let presenting:() -> Presenting
     // The text to show
     let text: Text
-    let delayTime = KBToastDelayTime
-  
-    
+    var delayTime = KBToastDelayTime
+    private let manager = KBToastManger.share
     func autoHidden() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayTime) {
-            self.isShowing = false
-        }
+        manager.delayTimeCall(callBack: {
+            withAnimation {
+                self.isShowing = false
+            }
+        }, delayTime: delayTime)
     }
     
     var body: some View {
@@ -62,7 +78,7 @@ extension View {
 
 struct KBToastDemo:View {
     @State var showToast = false
-    @State var message :String = "I am toast"
+    @State var message :String = ""
     
     var body:some View {
             NavigationView{
@@ -70,6 +86,7 @@ struct KBToastDemo:View {
                     Button(action: {
                         withAnimation {
                             self.message = "I am Toast \(Date().timeIntervalSince1970)"
+                            print("message : \(self.message)")
                             self.showToast = true
                         }
                     }) {
@@ -77,7 +94,6 @@ struct KBToastDemo:View {
                         }.offset(y:60)
                 }.navigationBarTitle(Text("Test Toast"),displayMode: .inline)
             }
-              
                 .toast(isShowing: $showToast, text: Text(message))
     }
 }
