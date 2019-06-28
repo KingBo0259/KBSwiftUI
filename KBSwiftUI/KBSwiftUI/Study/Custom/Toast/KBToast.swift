@@ -29,7 +29,7 @@ class KBToastManger {
 struct KBToast<Presenting> : View where Presenting:View {
     @Binding var isShowing :Bool
     //show parent View
-     let presenting:() -> Presenting
+    let presenting:() -> Presenting
     // The text to show
     let text: Text
     var delayTime = KBToastDelayTime
@@ -59,7 +59,6 @@ struct KBToast<Presenting> : View where Presenting:View {
                     .foregroundColor(Color.primary)
                     .cornerRadius(20)
                     .transition(.slide)
-                    
                     .opacity(self.isShowing ? 1: 0)
             }
             }
@@ -80,6 +79,11 @@ struct KBToastDemo:View {
     @State var showToast = false
     @State var message :String = ""
     
+    let description = """
+                         1、首次Toast文字不会显示bug,应该是SwiftUI bug，坐等后期修复.
+                         2、首次按钮字体会变形
+                     """
+    
     var body:some View {
             NavigationView{
                 VStack{
@@ -89,9 +93,18 @@ struct KBToastDemo:View {
                             print("message : \(self.message)")
                             self.showToast = true
                         }
-                    }) {
-                        Text(" Show Toast")
-                        }.offset(y:60)
+                    })
+                    {
+                        Text(" Show Toast +\(self.message)")
+                            .padding()
+                        }
+                    
+                    Text(description)
+                        .color(.gray)
+                        .lineLimit(nil)
+                        .font(.footnote)
+             
+                    
                 }.navigationBarTitle(Text("Test Toast"),displayMode: .inline)
             }
                 .toast(isShowing: $showToast, text: Text(message))
