@@ -1,4 +1,4 @@
-# 关于 ‘some’ 关键字的理解
+# 关于 `some` 关键字的理解
 
 ## 简要
 随着2019年6月份WWDC的大力推出之下，swiftUI横空出世，吸引了开发者的眼球，为之激动人心，其实 declaration 开发在安卓和flutter 中都有体现，  这其实是移动端的一种趋势，实施证明大量开发过程中，都已经对绝对坐标的依赖越来越少；
@@ -53,7 +53,7 @@ func pay() -> Void
 ```
 
 ## 问题的出现
-到目前为止，其实上面都还是比较顺利的 ，也没什么问题，但是我们考虑这样一个场景，如果我们要判定上面 ‘crediCard1’ 和‘crediCard2’ 是否相等呢？，我们如何去做？ 其实我们都会想到一个答案，就是 ‘PaymentType’继承‘Equatable’ 如下：
+到目前为止，其实上面都还是比较顺利的 ，也没什么问题，但是我们考虑这样一个场景，如果我们要判定上面 `crediCard1` 和`crediCard2` 是否相等呢？，我们如何去做？ 其实我们都会想到一个答案，就是 `PaymentType`继承`Equatable` 如下：
 >1.protocol PaymentType :Equatable
 
 >2.func favoriteCrediCard2() -> PaymentType 会出现以下错误
@@ -102,8 +102,8 @@ error：
  - CreditCard 和 ApplePay这两个类怎么又暴露出去了呢？？
  - 代码通过泛型编码变得复杂
 
-## 使用 ‘some’ 解决
-那么我们如何使用‘some’ 解决呢，我们只要在协议前面添加 关键子‘some’即可，代码如下：
+## 使用 `some` 解决
+那么我们如何使用`some` 解决呢，我们只要在协议前面添加 关键子‘some’即可，代码如下：
 ```swift
 func favoriteCrediCard() ->some PaymentType{
     CreditCard()
