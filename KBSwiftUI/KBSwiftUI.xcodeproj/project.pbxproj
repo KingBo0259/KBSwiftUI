@@ -67,6 +67,7 @@
 		A467B0A622BA5FC8004737EA /* KBTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A522BA5FC8004737EA /* KBTransition.swift */; };
 		A467B0A822BA6296004737EA /* KBCombineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0A722BA6296004737EA /* KBCombineText.swift */; };
 		A467B0AB22BA66D9004737EA /* KBCustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */; };
+		A48019DE22CDC97400E91C81 /* KBDragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48019DD22CDC97400E91C81 /* KBDragGestureView.swift */; };
 		A48715EC22BC8A3000F53BAB /* KBScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48715EB22BC8A3000F53BAB /* KBScrollView.swift */; };
 		A498701C22C1CE36009B3442 /* KBCoreMLPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */; };
 		A498701F22C1F306009B3442 /* KBMessageChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498701E22C1F306009B3442 /* KBMessageChatPage.swift */; };
@@ -149,6 +150,7 @@
 		A467B0A522BA5FC8004737EA /* KBTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBTransition.swift; sourceTree = "<group>"; };
 		A467B0A722BA6296004737EA /* KBCombineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCombineText.swift; sourceTree = "<group>"; };
 		A467B0AA22BA66D9004737EA /* KBCustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBCustomModifiers.swift; sourceTree = "<group>"; };
+		A48019DD22CDC97400E91C81 /* KBDragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDragGestureView.swift; sourceTree = "<group>"; };
 		A48715EB22BC8A3000F53BAB /* KBScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBScrollView.swift; sourceTree = "<group>"; };
 		A498701B22C1CE36009B3442 /* KBCoreMLPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBCoreMLPage.swift; sourceTree = "<group>"; };
 		A498701E22C1F306009B3442 /* KBMessageChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBMessageChatPage.swift; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 			children = (
 				A467B07822B916E5004737EA /* KBTap.swift */,
 				A467B07A22B9D64F004737EA /* KBGesture.swift */,
+				A48019DD22CDC97400E91C81 /* KBDragGestureView.swift */,
 			);
 			path = "Gesture&Tap";
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 				A49A345D22BB2C9600D98171 /* KBZStack.swift in Sources */,
 				A4CB71ED22B27A300039B6C9 /* SceneDelegate.swift in Sources */,
 				A400E63022B904F000CA6BB3 /* KBTextField.swift in Sources */,
+				A48019DE22CDC97400E91C81 /* KBDragGestureView.swift in Sources */,
 				A467B09722BA3795004737EA /* KBImage.swift in Sources */,
 				A498702522C20378009B3442 /* KBPageView.swift in Sources */,
 				A430C82922BCD98B007EC1FA /* KBLoginPage.swift in Sources */,
