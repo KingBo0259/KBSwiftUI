@@ -8,6 +8,13 @@
 
 import SwiftUI
 
+
+struct KBDragView : View {
+    var body:some View {
+        
+    }
+}
+
 struct KBGesture : View {
     @State private var  scale:Length = 1.0
     @State private var longScale:Length = 1.0
