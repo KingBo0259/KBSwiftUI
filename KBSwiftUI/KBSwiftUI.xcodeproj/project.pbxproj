@@ -86,6 +86,7 @@
 		A4CB71F422B27A320039B6C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CB71F322B27A320039B6C9 /* Preview Assets.xcassets */; };
 		A4CB71F722B27A320039B6C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB71F522B27A320039B6C9 /* LaunchScreen.storyboard */; };
 		A4CB720122B3B8E40039B6C9 /* KBState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB720022B3B8E40039B6C9 /* KBState.swift */; };
+		A4F0727B22CF2335001FCCA8 /* KBImageGestrueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F0727A22CF2335001FCCA8 /* KBImageGestrueView.swift */; };
 		A4F74E2122C206260061C103 /* KBMultilineTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F74E2022C206260061C103 /* KBMultilineTextView.swift */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +172,7 @@
 		A4CB71F622B27A320039B6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CB71F822B27A320039B6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CB720022B3B8E40039B6C9 /* KBState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBState.swift; sourceTree = "<group>"; };
+		A4F0727A22CF2335001FCCA8 /* KBImageGestrueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBImageGestrueView.swift; sourceTree = "<group>"; };
 		A4F74E2022C206260061C103 /* KBMultilineTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBMultilineTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -343,6 +345,7 @@
 				A467B07822B916E5004737EA /* KBTap.swift */,
 				A467B07A22B9D64F004737EA /* KBGesture.swift */,
 				A48019DD22CDC97400E91C81 /* KBDragGestureView.swift */,
+				A4F0727A22CF2335001FCCA8 /* KBImageGestrueView.swift */,
 			);
 			path = "Gesture&Tap";
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				A467B07922B916E5004737EA /* KBTap.swift in Sources */,
 				A430C82422BCCBB3007EC1FA /* KBFeatureLandMarks.swift in Sources */,
 				A4CB71EF22B27A300039B6C9 /* ContentView.swift in Sources */,
+				A4F0727B22CF2335001FCCA8 /* KBImageGestrueView.swift in Sources */,
 				A42DAA6522BBB68E0019EEE6 /* KBSystemImage.swift in Sources */,
 				A467B07B22B9D64F004737EA /* KBGesture.swift in Sources */,
 				A467B07622B913E0004737EA /* KBSegment.swift in Sources */,
