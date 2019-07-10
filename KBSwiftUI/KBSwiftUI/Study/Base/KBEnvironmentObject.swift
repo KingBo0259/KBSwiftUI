@@ -28,7 +28,7 @@ struct KBEnvironmentObject : View {
                         .background(Color.red) //颜色一定要早cornerRadius 之前调用
                         .cornerRadius(12)
                     
-                    NavigationButton(destination: KBEnvironmentObjectDetail()) {
+                    NavigationLink(destination: KBEnvironmentObjectDetail()) {
                         Text("show  detail View")
                     }.navigationBarTitle(Text("Environment Object"),displayMode: .automatic)
                     

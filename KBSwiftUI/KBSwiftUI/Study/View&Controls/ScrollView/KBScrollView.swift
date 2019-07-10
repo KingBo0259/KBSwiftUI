@@ -11,7 +11,7 @@ import SwiftUI
 struct KBScrollView : View {
     var body: some View {
         VStack(spacing:25){
-            ScrollView(isScrollEnabled: true, alwaysBounceHorizontal: false, alwaysBounceVertical: false, showsHorizontalIndicator: true, showsVerticalIndicator: true){
+            ScrollView(showsIndicators: true){
                 HStack{
                     ForEach (1...10) { index   in
                         VStack{
@@ -25,7 +25,7 @@ struct KBScrollView : View {
                         }
                         }
                 }
-            }.frame(height: 150)
+            }.frame(height: 150.0)
          
          
  
@@ -58,7 +58,7 @@ struct KBScrollView : View {
             Divider()
             
             GeometryReader { geometry in
-                ScrollView(isScrollEnabled: true, alwaysBounceHorizontal: false, alwaysBounceVertical: false, showsHorizontalIndicator: true, showsVerticalIndicator: true) {
+                ScrollView(showsIndicators:true) {
                     HStack {
                         ForEach(0..<15) { index in
                             VStack{

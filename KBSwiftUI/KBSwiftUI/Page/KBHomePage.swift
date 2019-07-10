@@ -26,7 +26,7 @@ struct KBHomePage : View {
             List{
                 KBFeatureLandMarks(feature: feature)
                     .scaledToFill()
-                    .frame(height: 200)
+                    .frame(height:200.0)
                     .clipped()
                     .listRowInsets(EdgeInsets())
                 
@@ -37,7 +37,7 @@ struct KBHomePage : View {
                 
                 
                 
-                NavigationButton(destination: KBStaticList()) {
+                NavigationLink(destination: KBStaticList()) {
                     Text("See All")
                     }
                 

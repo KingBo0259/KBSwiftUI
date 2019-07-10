@@ -16,7 +16,9 @@ struct KBPresentViewDetail:View {
 
 struct KBPresentView : View {
     var body: some View {
-        PresentationButton(Text("Click to Present View"), destination: KBPresentViewDetail())
+        PresentationLink(destination: KBPresentViewDetail()) {
+            Text("Click to Present View")
+        }
      }
 }
 

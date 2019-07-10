@@ -11,7 +11,7 @@ import SwiftUI
 struct KBViewLifecycleEvents : View {
     var body: some View {
         NavigationView{
-            NavigationButton(destination: KBViewLifeDetailView()) {
+            NavigationLink(destination: KBViewLifeDetailView()) {
                      Text( "点击显示明细")
                     }
                 Divider()
