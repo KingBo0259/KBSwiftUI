@@ -9,10 +9,43 @@
 import SwiftUI
 
 struct KBBasicForm : View {
+    @State var enableLogging = false
+    
+    @State var selectedColor = 0
+    @State var colors = ["Red", "Green", "Blue"]
+    @State var username :String=""
     var body: some View {
-        VStack {
+        Form {
             Text("please see here:  https://www.hackingwithswift.com/quick-start/swiftui/basic-form-design")
             Text("我的beta 版本好像无法识别Form 关键字 ")
+            SegmentedControl(selection: $selectedColor) {
+                ForEach(0 ..< colors.count) {
+                    Text(self.colors[$0]).tag($0)
+                }
+            }
+            
+            Toggle(isOn: $enableLogging) {
+                Text("Enable Logging")
+            }
+            
+            Button(action: {
+                // activate theme!
+            }) {
+                Text("Save changes")
+            }
+            Spacer()
+            TextField("hello", text: $username)
+            TextField("hello", text: $username)
+
+            Group{
+                TextField("hello", text: $username)
+                TextField("hello", text: $username)
+                TextField("hello", text: $username)
+                TextField("hello", text: $username)
+                TextField("hello", text: $username)
+                TextField("hello", text: $username)
+            }
+         
         }
     }
 }
