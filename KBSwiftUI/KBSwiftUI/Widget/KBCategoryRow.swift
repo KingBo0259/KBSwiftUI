@@ -14,7 +14,7 @@ struct KBCategoryRow : View {
     var body: some View {
         VStack(alignment:.leading) {
             Text(categoryName)
-            ScrollView {
+            ScrollView(.horizontal, showsIndicators: false){
                     HStack{
                         ForEach(list) { landmard in
                         
