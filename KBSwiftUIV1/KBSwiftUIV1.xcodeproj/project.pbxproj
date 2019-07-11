@@ -89,6 +89,7 @@
 		A4E3BD5222D70C7800609300 /* KBFeatureLandMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BD0622D70C7800609300 /* KBFeatureLandMarks.swift */; };
 		A4E3BD5322D70C7800609300 /* KBCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BD0722D70C7800609300 /* KBCategoryRow.swift */; };
 		A4E3BD5422D70C7800609300 /* KBCountDownWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BD0822D70C7800609300 /* KBCountDownWidget.swift */; };
+		A4E3BD5622D71BFC00609300 /* KBSectionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BD5522D71BFC00609300 /* KBSectionForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,7 @@
 		A4E3BD0622D70C7800609300 /* KBFeatureLandMarks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBFeatureLandMarks.swift; sourceTree = "<group>"; };
 		A4E3BD0722D70C7800609300 /* KBCategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBCategoryRow.swift; sourceTree = "<group>"; };
 		A4E3BD0822D70C7800609300 /* KBCountDownWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBCountDownWidget.swift; sourceTree = "<group>"; };
+		A4E3BD5522D71BFC00609300 /* KBSectionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSectionForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				A4E3BCDD22D70C7800609300 /* KBBasicForm.swift */,
+				A4E3BD5522D71BFC00609300 /* KBSectionForm.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -691,6 +694,7 @@
 				A4E3BD3522D70C7800609300 /* KBBasicForm.swift in Sources */,
 				A4E3BD2B22D70C7800609300 /* KBSpringAnimation.swift in Sources */,
 				A4E3BC8622D70B3800609300 /* AppDelegate.swift in Sources */,
+				A4E3BD5622D71BFC00609300 /* KBSectionForm.swift in Sources */,
 				A4E3BD3222D70C7800609300 /* KBToast.swift in Sources */,
 				A4E3BD2722D70C7800609300 /* KBMultilineTextView.swift in Sources */,
 				A4E3BD3D22D70C7800609300 /* KBSlider.swift in Sources */,
