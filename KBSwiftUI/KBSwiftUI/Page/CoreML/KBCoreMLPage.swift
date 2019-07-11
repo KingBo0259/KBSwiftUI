@@ -65,7 +65,6 @@ struct KBCoreMLPage : View {
     func caculateBetime() {
         //TODO: 需要排后期完成 https://www.youtube.com/watch?v=_AVr0tlPxHw&feature=youtu.be
         
-        do {
             let componments = Calendar.current.dateComponents([.hour,.minute],from: wakeup)
             let hour = (componments.hour ?? 0) * 60 * 60
             
@@ -75,16 +74,7 @@ struct KBCoreMLPage : View {
             let sleepTime = wakeup
             alertMessage  = formatter.string(from: sleepTime)
             alertTitle = " You ideal bedtime is..."
-            
-            
-            
-        }catch {
-            alertTitle  = "Error"
-            alertMessage =  " Sorry, there was a problem caculating you bedtime"
-            
-        }
-        showingAlert = true
-        
+            showingAlert = true
     }
     
 }
