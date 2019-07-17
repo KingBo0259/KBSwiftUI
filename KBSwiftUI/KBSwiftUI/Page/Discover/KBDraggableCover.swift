@@ -74,6 +74,7 @@ struct KBDraggableCover : View {
     
     // MARK: - Constructor vars
     let movieId: Int
+    let movieImage:String
     @Binding var gestureViewState: DragState
     let onTapGesture: () -> Void
     let willEndGesture: (CGSize) -> Void
@@ -154,7 +155,7 @@ struct KBDraggableCover : View {
             self.gestureViewState = .inactive
         }
         
-        return KBDiscoverConverImage(imageLoader: KBImageLoader(path: "/mKxpYRIrCZLxZjNqpocJ2RdQW8v.jpg", size: .original))
+        return KBDiscoverConverImage(imageLoader: KBImageLoader(path: movieImage, size: .original))
             .offset(computedOffset())
             .animation(delayedIsActive ? coverSpringAnimation : nil)
             .opacity(predictedEndLocation != nil ? 0:1)
