@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A47CF19822DEF9B60006C02A /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = A47CF19722DEF9B60006C02A /* SwiftUIFlux */; };
+		A47CF19D22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */; };
 		A4E3BC8622D70B3800609300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8522D70B3800609300 /* AppDelegate.swift */; };
 		A4E3BC8822D70B3800609300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8722D70B3800609300 /* SceneDelegate.swift */; };
 		A4E3BC8A22D70B3800609300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8922D70B3800609300 /* ContentView.swift */; };
@@ -93,6 +95,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSwiftUIFluxDemo.swift; sourceTree = "<group>"; };
 		A4E3BC8222D70B3800609300 /* KBSwiftUIV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUIV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3BC8522D70B3800609300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E3BC8722D70B3800609300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,12 +188,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47CF19822DEF9B60006C02A /* SwiftUIFlux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A47CF19B22DEFA4D0006C02A /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		A4E3BC7922D70B3800609300 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		A4E3BC8422D70B3800609300 /* KBSwiftUIV1 */ = {
 			isa = PBXGroup;
 			children = (
+				A47CF19B22DEFA4D0006C02A /* Third */,
 				A4E3BCB522D70C7800609300 /* Model */,
 				A4E3BC9922D70C7800609300 /* Page */,
 				A4E3BCBA22D70C7800609300 /* Preview Content */,
@@ -616,6 +629,9 @@
 			dependencies = (
 			);
 			name = KBSwiftUIV1;
+			packageProductDependencies = (
+				A47CF19722DEF9B60006C02A /* SwiftUIFlux */,
+			);
 			productName = KBSwiftUIV1;
 			productReference = A4E3BC8222D70B3800609300 /* KBSwiftUIV1.app */;
 			productType = "com.apple.product-type.application";
@@ -644,6 +660,9 @@
 				Base,
 			);
 			mainGroup = A4E3BC7922D70B3800609300;
+			packageReferences = (
+				A47CF19622DEF9B60006C02A /* XCRemoteSwiftPackageReference "SwiftUIFlux" */,
+			);
 			productRefGroup = A4E3BC8322D70B3800609300 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -704,6 +723,7 @@
 				A4E3BD3122D70C7800609300 /* KBCustomModifiers.swift in Sources */,
 				A4E3BD4222D70C7800609300 /* KBLoadMoreList.swift in Sources */,
 				A4E3BD5422D70C7800609300 /* KBCountDownWidget.swift in Sources */,
+				A47CF19D22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift in Sources */,
 				A4E3BD2D22D70C7800609300 /* KBTap.swift in Sources */,
 				A4E3BD4E22D70C7800609300 /* KBViewLifecycleEvents.swift in Sources */,
 				A4E3BD4C22D70C7800609300 /* KBEnvironmentObject.swift in Sources */,
@@ -942,6 +962,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A47CF19622DEF9B60006C02A /* XCRemoteSwiftPackageReference "SwiftUIFlux" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dimillian/SwiftUIFlux.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A47CF19722DEF9B60006C02A /* SwiftUIFlux */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A47CF19622DEF9B60006C02A /* XCRemoteSwiftPackageReference "SwiftUIFlux" */;
+			productName = SwiftUIFlux;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A4E3BC7A22D70B3800609300 /* Project object */;
 }
