@@ -13,6 +13,8 @@
 		A47CF1A422DF0B5F0006C02A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1A322DF0B5F0006C02A /* APIService.swift */; };
 		A47CF1A622DF0B6A0006C02A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1A522DF0B6A0006C02A /* ImageService.swift */; };
 		A47CF1AD22DF13EA0006C02A /* KBDiscoverConverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */; };
+		A47CF1AF22DF1F2D0006C02A /* KBDraggableCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1AE22DF1F2D0006C02A /* KBDraggableCover.swift */; };
+		A47CF1B122DF29920006C02A /* KBDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1B022DF29920006C02A /* KBDiscoverView.swift */; };
 		A4E3BC8622D70B3800609300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8522D70B3800609300 /* AppDelegate.swift */; };
 		A4E3BC8822D70B3800609300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8722D70B3800609300 /* SceneDelegate.swift */; };
 		A4E3BC8A22D70B3800609300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8922D70B3800609300 /* ContentView.swift */; };
@@ -104,6 +106,8 @@
 		A47CF1A322DF0B5F0006C02A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		A47CF1A522DF0B6A0006C02A /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDiscoverConverImage.swift; sourceTree = "<group>"; };
+		A47CF1AE22DF1F2D0006C02A /* KBDraggableCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDraggableCover.swift; sourceTree = "<group>"; };
+		A47CF1B022DF29920006C02A /* KBDiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDiscoverView.swift; sourceTree = "<group>"; };
 		A4E3BC8222D70B3800609300 /* KBSwiftUIV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUIV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3BC8522D70B3800609300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E3BC8722D70B3800609300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */,
+				A47CF1AE22DF1F2D0006C02A /* KBDraggableCover.swift */,
+				A47CF1B022DF29920006C02A /* KBDiscoverView.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -807,8 +813,10 @@
 				A4E3BD2022D70C7800609300 /* KBData.swift in Sources */,
 				A4E3BD5122D70C7800609300 /* KBState.swift in Sources */,
 				A4E3BD3E22D70C7800609300 /* KBTabView.swift in Sources */,
+				A47CF1B122DF29920006C02A /* KBDiscoverView.swift in Sources */,
 				A4E3BD3322D70C7800609300 /* KBGradient.swift in Sources */,
 				A47CF1A422DF0B5F0006C02A /* APIService.swift in Sources */,
+				A47CF1AF22DF1F2D0006C02A /* KBDraggableCover.swift in Sources */,
 				A4E3BD5322D70C7800609300 /* KBCategoryRow.swift in Sources */,
 				A4E3BD0922D70C7800609300 /* KBMessageChatPage.swift in Sources */,
 				A4E3BD4F22D70C7800609300 /* KBMask.swift in Sources */,
