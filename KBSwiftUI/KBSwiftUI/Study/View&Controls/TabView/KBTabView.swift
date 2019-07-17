@@ -38,33 +38,35 @@ struct PlaceForm : View {
 
 
 struct KBTabView : View {
-    @State private  var tabSelect = 0
-
-    var body: some View {
-         TabbedView(selection:$tabSelect) {
-            Text("这里为什么Image 和Text 一起布局有问题呢？？ SwiftUI bug？")
-               
-               .lineLimit(nil) .padding().tabItemLabel(Text("首页").color((self.tabSelect == 0 ? .blue : Color.yellow)))
-                .animation(.spring())
-                .tag(0)
-            
-            Text("Tab1")
-                .tabItemLabel(Image("tab_home")
-                                .resizable())
-                .tag(1)
-       
-             List{
-                Text("12 ")
-                Text("123")
-                }
-                .tabItemLabel(Text("tab3"))
-                .tag(2)
-            
-            PlaceForm().tabItemLabel(
-                Image(systemName: "bolt.fill")
-                ).tag(3)
-            
+    @State var selectedTab = Tab.movies
+    
+    enum Tab: Int {
+        case movies, discover, myLists
+    }
+    
+    func tabbarItem(text: String, image: String) -> some View {
+        VStack {
+            Image(systemName: image)
+                .imageScale(.large)
+            Text(text)
         }
+    }
+    
+    
+    var body: some View {
+         TabbedView(selection:$selectedTab) {
+                Text("movies").tabItem {
+                    tabbarItem(text: "Movices", image: "film")
+                }.tag(Tab.movies)
+            
+                Text("Discover").tabItem {
+                    tabbarItem(text: "Discover", image: "square.stack")
+                }.tag(Tab.discover)
+            
+                Text("List").tabItem {
+                    tabbarItem(text: "List", image: "heart.circle")
+                }.tag(Tab.myLists)
+            }.edgesIgnoringSafeArea(.top)
     }
 }
 
