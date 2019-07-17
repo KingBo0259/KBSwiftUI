@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A47CF19822DEF9B60006C02A /* SwiftUIFlux in Frameworks */ = {isa = PBXBuildFile; productRef = A47CF19722DEF9B60006C02A /* SwiftUIFlux */; };
 		A47CF19D22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */; };
+		A47CF1A122DF0A940006C02A /* KBImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1A022DF0A940006C02A /* KBImageLoader.swift */; };
+		A47CF1A422DF0B5F0006C02A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1A322DF0B5F0006C02A /* APIService.swift */; };
+		A47CF1A622DF0B6A0006C02A /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1A522DF0B6A0006C02A /* ImageService.swift */; };
+		A47CF1AD22DF13EA0006C02A /* KBDiscoverConverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */; };
 		A4E3BC8622D70B3800609300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8522D70B3800609300 /* AppDelegate.swift */; };
 		A4E3BC8822D70B3800609300 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8722D70B3800609300 /* SceneDelegate.swift */; };
 		A4E3BC8A22D70B3800609300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E3BC8922D70B3800609300 /* ContentView.swift */; };
@@ -96,6 +100,10 @@
 
 /* Begin PBXFileReference section */
 		A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBSwiftUIFluxDemo.swift; sourceTree = "<group>"; };
+		A47CF1A022DF0A940006C02A /* KBImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBImageLoader.swift; sourceTree = "<group>"; };
+		A47CF1A322DF0B5F0006C02A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A47CF1A522DF0B6A0006C02A /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDiscoverConverImage.swift; sourceTree = "<group>"; };
 		A4E3BC8222D70B3800609300 /* KBSwiftUIV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBSwiftUIV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E3BC8522D70B3800609300 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4E3BC8722D70B3800609300 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,9 +206,74 @@
 		A47CF19B22DEFA4D0006C02A /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */,
+				A47CF1A722DF12E90006C02A /* flux */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		A47CF19E22DF0A530006C02A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				A47CF1AC22DF13EA0006C02A /* KBDiscoverConverImage.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		A47CF19F22DF0A820006C02A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A47CF1A022DF0A940006C02A /* KBImageLoader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A47CF1A222DF0B4A0006C02A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A47CF1A322DF0B5F0006C02A /* APIService.swift */,
+				A47CF1A522DF0B6A0006C02A /* ImageService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A47CF1A722DF12E90006C02A /* flux */ = {
+			isa = PBXGroup;
+			children = (
+				A47CF1AB22DF13670006C02A /* middlewares */,
+				A47CF1AA22DF130E0006C02A /* reducers */,
+				A47CF1A922DF13070006C02A /* actions */,
+				A47CF1A822DF13010006C02A /* state */,
+				A47CF19C22DEFA6C0006C02A /* KBSwiftUIFluxDemo.swift */,
+			);
+			path = flux;
+			sourceTree = "<group>";
+		};
+		A47CF1A822DF13010006C02A /* state */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		A47CF1A922DF13070006C02A /* actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		A47CF1AA22DF130E0006C02A /* reducers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reducers;
+			sourceTree = "<group>";
+		};
+		A47CF1AB22DF13670006C02A /* middlewares */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = middlewares;
 			sourceTree = "<group>";
 		};
 		A4E3BC7922D70B3800609300 = {
@@ -222,6 +295,8 @@
 		A4E3BC8422D70B3800609300 /* KBSwiftUIV1 */ = {
 			isa = PBXGroup;
 			children = (
+				A47CF1A222DF0B4A0006C02A /* Service */,
+				A47CF19F22DF0A820006C02A /* Utils */,
 				A47CF19B22DEFA4D0006C02A /* Third */,
 				A4E3BCB522D70C7800609300 /* Model */,
 				A4E3BC9922D70C7800609300 /* Page */,
@@ -251,6 +326,7 @@
 		A4E3BC9922D70C7800609300 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				A47CF19E22DF0A530006C02A /* Discover */,
 				A4E3BC9A22D70C7800609300 /* Chat */,
 				A4E3BC9C22D70C7800609300 /* CoreML */,
 				A4E3BC9E22D70C7800609300 /* KBHomePage.swift */,
@@ -717,6 +793,7 @@
 				A4E3BD3222D70C7800609300 /* KBToast.swift in Sources */,
 				A4E3BD2722D70C7800609300 /* KBMultilineTextView.swift in Sources */,
 				A4E3BD3D22D70C7800609300 /* KBSlider.swift in Sources */,
+				A47CF1A622DF0B6A0006C02A /* ImageService.swift in Sources */,
 				A4E3BD4522D70C7800609300 /* KBStaticList.swift in Sources */,
 				A4E3BD3022D70C7800609300 /* KBDartAndLightMode.swift in Sources */,
 				A4E3BD4A22D70C7800609300 /* KBModalView.swift in Sources */,
@@ -731,6 +808,7 @@
 				A4E3BD5122D70C7800609300 /* KBState.swift in Sources */,
 				A4E3BD3E22D70C7800609300 /* KBTabView.swift in Sources */,
 				A4E3BD3322D70C7800609300 /* KBGradient.swift in Sources */,
+				A47CF1A422DF0B5F0006C02A /* APIService.swift in Sources */,
 				A4E3BD5322D70C7800609300 /* KBCategoryRow.swift in Sources */,
 				A4E3BD0922D70C7800609300 /* KBMessageChatPage.swift in Sources */,
 				A4E3BD4F22D70C7800609300 /* KBMask.swift in Sources */,
@@ -753,6 +831,7 @@
 				A4E3BD3422D70C7800609300 /* KBScrollView.swift in Sources */,
 				A4E3BD3C22D70C7800609300 /* KBSegment.swift in Sources */,
 				A4E3BD4622D70C7800609300 /* KBDynamicList.swift in Sources */,
+				A47CF1AD22DF13EA0006C02A /* KBDiscoverConverImage.swift in Sources */,
 				A4E3BD3822D70C7800609300 /* KBPicker.swift in Sources */,
 				A4E3BD4422D70C7800609300 /* KBListDetetRow.swift in Sources */,
 				A4E3BD2222D70C7800609300 /* KBLandmark.swift in Sources */,
@@ -770,6 +849,7 @@
 				A4E3BD0A22D70C7800609300 /* KBCoreMLPage.swift in Sources */,
 				A4E3BD0D22D70C7800609300 /* KBLoginPage.swift in Sources */,
 				A4E3BD3922D70C7800609300 /* KBSystemImage.swift in Sources */,
+				A47CF1A122DF0A940006C02A /* KBImageLoader.swift in Sources */,
 				A4E3BD2122D70C7800609300 /* KBHike.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
