@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let setting = KBUserSettings()
         setting.score = 100
         
+        
+        
         let navi = UINavigationBar.appearance()
         navi.barTintColor = UIColor.blue //设置导航蓝背景色
 //        navi.tintColor = .white
